@@ -1,0 +1,63 @@
+.header__container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "uno dos tres"
+    "cuatro cinco seis"
+    "siete ocho nueve";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.header__container__number {
+  grid-area: cinco;
+  font-size: 55px;
+}
+
+.header__container__plus-button {
+  grid-area: nueve;
+  width: 100%;
+  height: 100%;
+  transform: translate(50%, 50%);
+}
+
+.header__container__minus-button {
+  grid-area: siete;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, 50%);
+}
+
+.header__container__minus-button,
+.header__container__plus-button {
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+  font-size: 50px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.header__container__minus-button:hover,
+.header__container__plus-button:hover {
+  cursor: pointer;
+}

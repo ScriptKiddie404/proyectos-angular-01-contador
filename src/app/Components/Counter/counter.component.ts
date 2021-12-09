@@ -5,4 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './counter.component.html',
   styleUrls: ['./counter.component.css'],
 })
-export class CounterComponent {}
+export class CounterComponent {
+  public counter: number = 0;
+  changeCounter = (amount: number) => (this.counter += amount);
+}
