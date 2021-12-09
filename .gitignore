@@ -44,3 +44,9 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# personales
+.vscode
+karma.conf.js
+.editorconfig
+.browserslistrc
